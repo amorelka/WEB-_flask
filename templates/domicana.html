@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Доминикансая республика
+{% endblock %}
+
+{% block body %}
+{{ super() }}
+<article class="blog-post">
+    <h2 class="blog-post-meta">Вернуться <a href="about">назад</a></h2>
+
+    <div class="row featurette">
+        <div class="col-md-7">
+            <h2 class="featurette-heading">Водопады Харабакоа
+            </h2>
+            <p class="lead">Харабакоа – горный курорт Доминиканской республики, который называют еще Доминиканскими
+                Альпами, также славится своими прекрасными сосновыми лесами и водопадами.</p>
+        </div>
+        <div class="col-md-5">
+            <td bgcolor="#FFA07A"></td>
+            <td><img src="{{ url_for('static', filename='img/arzfhdplvk84ks08k480owwok.jpg') }}" alt="Эмблема" width="500"
+                     height="350">
+            </td>
+
+        </div>
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading">Остров Саона
+                </h2>
+                <p class="lead">Остров является национальным парком Эсте и охраняется государством. Поэтому, на
+                    территории острова запрещено любое основательное строительство. Тут нет ни одного отеля или любого
+                    другого капитального строения.</p>
+            </div>
+            <div class="col-md-5">
+                <td bgcolor="#FFA07A"></td>
+                <td><img src="{{ url_for('static', filename='img/image.png') }}" alt="Эмблема" width="500"
+                         height="350">
+                </td>
+
+        </div>
+            </div>
+
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">Национальный пантеон Доминиканской республики
+                </h2>
+                <p class="lead">В наши дни строение выступает в качестве национального символа Доминиканской
+                    Республики и служит местом последнего упокоения самых почётных граждан республики. </p>
+            </div>
+            <div class="col-md-5">
+                <td bgcolor="#FFA07A"></td>
+                <td><img src="{{ url_for('static', filename='img/120img0.jpg') }}" alt="Эмблема" width="500"
+                         height="350">
+                </td>
+
+        </div>
+        {% endblock %}

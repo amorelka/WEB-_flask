@@ -1,0 +1,96 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Страны Карибского бассейна
+{% endblock %}
+
+{% block body %}
+<div class="container marketing">
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+        <div class="col-md-7">
+            <h2 class="featurette-heading"><a href="{{url_for('mexico')}}">Мексика</a>
+            </h2>
+            <p class="lead">Государство в Северной Америке, на севере граничит с Соединёнными Штатами Америки, на
+                юго-востоке - с Белизом и Гватемалой, на западе омывается водами Калифорнийского залива и Тихого океана,
+                на востоке - водами Атлантического океана, Мексиканского залива и Карибского моря. Крупнейшая в мире
+                испаноязычная страна.</p>
+        </div>
+        <div class="col-md-5">
+            <td bgcolor="#FFA07A"></td>
+            <td><img src="{{ url_for('static', filename='img/map_of_Mexico_3.jpg') }}" alt="Эмблема" width="500"
+                     height="350">
+            </td>
+
+        </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+        <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading"><a href="{{url_for('domicana')}}">Доминиканская республика</a></h2>
+            <p class="lead"> Государство в восточной части острова Гаити (Карибское море) и на прибрежных островах.
+                Западную часть острова (36 % территории) занимает государство Республика Гаити.
+                Остров входит в состав архипелага Больших Антильских островов.
+                Столица — Санто-Доминго. Официальный язык — испанский.
+
+                Население государства — около 10,5 млн чел. (2020).</p>
+        </div>
+        <div class="col-md-5 order-md-1">
+            <td bgcolor="#FFA07A"></td>
+            <td><img src="{{ url_for('static', filename='img/screen16.jpg') }}" alt="Эмблема" width="500"
+                     height="350">
+            </td>
+            </svg>
+
+        </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+        <div class="col-md-7">
+            <h2 class="featurette-heading"><a href="{{url_for('cuba')}}">Куба</a></h2>
+            <p class="lead">Островное государство в Латинской Америке, в Карибском бассейне. Расположено на островах
+                Куба, Хувентуд и на более чем 1600 мелких островах группы Больших Антильских островов. На востоке
+                омывается Атлантическим океаном, на юге - Карибским морем. От Северной Америки отделено на западе
+                Юкатанским проливом, на севере - Флоридским проливом. Унитарное государство. Столица и крупнейший город
+                - Гавана. Денежная единица - песо. Официальный язык - испанский.</p>
+        </div>
+        <div class="col-md-5">
+            <td bgcolor="#FFA07A"></td>
+            <td><img
+                    src="{{ url_for('static', filename='img/mapcuba.jpg') }}"
+                    alt="Эмблема" width="500"
+                    height="350">
+            </td>
+            </svg>
+        </div>
+    </div>
+
+    <hr class="featurette-divider">
+    <div class="row featurette">
+        <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading"><a href="{{url_for('costarica')}}">Коста-Рика</a></h2>
+            <p class="lead"> Государство в Центральной Америке. Граничит с двумя странами: Никарагуа на севере и
+                Республикой Панама на юго-востоке. Тихий океан омывает берега с юга и запада и Карибское море - с
+                востока. Даже по меркам Центральной Америки Коста-Рика - небольшая страна, лишь 2 страны региона имеют
+                меньшую площадь, и 2 - меньшее население.</p>
+        </div>
+        <div class="col-md-5 order-md-1">
+            <td bgcolor="#FFA07A"></td>
+            <td><img src="{{ url_for('static', filename='img/kostarika_big.jpg') }}" alt="Эмблема" width="500"
+                     height="350">
+            </td>
+            </svg>
+
+        </div>
+    </div>
+    <hr>
+    <h2 class="blog-post-title">
+        И это лишь малая часть прекрасных стран Карибского бассейна</h2>
+
+</div>
+{% endblock %}

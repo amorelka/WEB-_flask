@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Отзыв
+{% endblock %}
+
+{% block body %}
+{{ super() }}
+{{ post | safe}}
+{% endblock %}

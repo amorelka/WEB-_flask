@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Коста-Рика
+{% endblock %}
+
+{% block body %}
+{{ super() }}
+<article class="blog-post">
+    <h2 class="blog-post-meta">Вернуться <a href="about">назад</a></h2>
+
+    <div class="row featurette">
+        <div class="col-md-7">
+            <h2 class="featurette-heading">Вулкан Ареналь
+            </h2>
+            <p class="lead">Ареналь своей вулканической активностью, привлекая в регион миллионы туристов, сильно
+                поспособствовал увеличению богатства этих мест. Ла Фортуна сейчас — главный туристический центр в этой
+                части страны. Визитеров сюда привлекает национальный парк с вулканом и маршрутами для прогулок по
+                тропическому лесу с разнообразной живностью, а также впечатляющие водопады, горячие источники и огромное
+                озеро Ареналь.</p>
+        </div>
+        <div class="col-md-5">
+            <td bgcolor="#FFA07A"></td>
+            <td><img src="{{ url_for('static', filename='img/arzfhdplvk84ks08k480owwok.jpg') }}" alt="Эмблема" width="500"
+                     height="350">
+            </td>
+
+        </div>
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading">Водопад Ла Фортуна
+                </h2>
+                <p class="lead">Водопад Ла Фортуна - это живописный каскад у подножия вулкана Чато, который течет с
+                    оглушительной силой в густом тропическом лесу. Река Тенорио питает этот массивный водопад.</p>
+            </div>
+            <div class="col-md-5">
+                <td bgcolor="#FFA07A"></td>
+                <td><img src="{{ url_for('static', filename='img/927c56c3-3963-441e-8bd0-211c5b653149-crf-web-2.jpg') }}" alt="Эмблема" width="500"
+                         height="350">
+                </td>
+
+        </div>
+            </div>
+
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">Национальный парк Мануэль Антонио
+                </h2>
+                <p class="lead">Мануэль Антонио, жемчужина экотуризма Коста-Рики, один из самых бионасыщенных уголков
+                    мира из серии мал золотник да дорог! Здесь можно получить идеальное сочетание райских безлюдных
+                    пляжей, тропических лесов, коралловых рифов, контактов с животными миром и активных треков. </p>
+            </div>
+            <div class="col-md-5">
+                <td bgcolor="#FFA07A"></td>
+                <td><img src="{{ url_for('static', filename='img/162029df9150df24ff3a9728c4aea591.jpg') }}" alt="Эмблема" width="500"
+                         height="350">
+                </td>
+
+            </div>
+            {% endblock %}

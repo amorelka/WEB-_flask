@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+
+{% block title %}
+Аккаунт
+{% endblock %}
+
+{% block body %}
+{{ super() }}
+{% for cat, msg in get_flashed_messages(True) %}
+<div class="flash {{cat}}">{{msg}}</div>
+{% endfor %}
+ 
+<form action="{{url_for('reviews')}}" method="post" class="form-contact">
+<p><label>Название отзыва: </label> <input type="text" name="name" value="" requied />
+<p><label>URL отзыва: </label> <input type="text" name="url" value="" requied />
+<p><label>Текст отзыва:</label>
+<p><textarea name="post" rows=7 cols=40></textarea>
+<p><input type="submit" value="Добавить" />
+</form>
+{% endblock %}

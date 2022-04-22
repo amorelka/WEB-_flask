@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title></title>
+</head>
+<body>
+<dl class="row">
+    {% for key, value in answers.items() %}
+    <dd class="col-sm-3">{{ key }} {{value}}</dd>
+    {% endfor %}
+</dl>
+</body>
+</html>

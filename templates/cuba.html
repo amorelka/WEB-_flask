@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Куба
+{% endblock %}
+
+{% block body %}
+{{ super() }}
+<article class="blog-post">
+    <h2 class="blog-post-meta">Вернуться <a href="about">назад</a></h2>
+
+    <div class="row featurette">
+        <div class="col-md-7">
+            <h2 class="featurette-heading">Большой театр Гаваны
+            </h2>
+            <p class="lead">Великолепное здание театра, которое мы видим сейчас, – еще один пример великолепного
+                колониального барокко на Кубе. Здание является одним из крупнейших театров и способно разместить,
+                пожалуй, всех желающих увидеть представление: главный зал рассчитан на полторы тысячи посадочных
+                мест. </p>
+        </div>
+        <div class="col-md-5">
+            <td bgcolor="#FFA07A"></td>
+            <td><img src="{{ url_for('static', filename='img/Bolshoj-teatr-v-Gavane-Kuba.jpg') }}" alt="Эмблема"
+                     width="500"
+                     height="350">
+            </td>
+
+        </div>
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading">Набережная Малекон
+                </h2>
+                <p class="lead">Многим туристам нравятся праздничные карнавалы, которые проходят здесь в феврале, а
+                    также каждые выходные с июля по август. В это время на набережной начинается самый настоящий
+                    праздник жизни для туристов и местных жителей.</p>
+            </div>
+            <div class="col-md-5">
+                <td bgcolor="#FFA07A"></td>
+                <td><img src="{{ url_for('static', filename='img/402165B9-8802-475F-B6B3-EE5AEF31DAF5.jpeg') }}" alt="Эмблема" width="500"
+                         height="350">
+                </td>
+
+        </div>
+            </div>
+
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">Acuario Nacional de Cuba
+                </h2>
+                <p class="lead">Гаванский аквариум создан не только как центр развлечений, но и в качестве
+                    образовательного центра. По выходным здесь проходят лекции по охране морских черепах, поведению
+                    морских львов или основам дайвинга. </p>
+            </div>
+            <div class="col-md-5">
+                <td bgcolor="#FFA07A"></td>
+                <td><img src="{{ url_for('static', filename='img/p231_img_7301.jpg') }}" alt="Эмблема" width="500"
+                         height="350">
+                </td>
+
+        </div>
+        {% endblock %}
